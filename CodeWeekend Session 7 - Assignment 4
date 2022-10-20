@@ -1,0 +1,22 @@
+mysql> SHOW TABLES;
+Empty set (0.00 sec)
+mysql> CREATE TABLE Teachers (name VARCHAR(20), id VARCHAR(20),
+       first_name VARCHAR(20), email CHAR(1), birth DATE, department DATE);
+       mysql> SHOW TABLES;
++---------------------+
+| Tables in menagerie |
++---------------------+
+| Teachers                 |
++---------------------+
+mysql> DESCRIBE Teachers;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| id    | varchar(20) | YES  |     | NULL    |       |
+| first_name   | varchar(20) | YES  |     | NULL    |       |
+| last_name | varchar(20) | YES  |     | NULL    |       |
+| email     | char(1)     | YES  |     | NULL    |       |
+| birth   | date        | YES  |     | NULL    |       |
+| department   | date        | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+
